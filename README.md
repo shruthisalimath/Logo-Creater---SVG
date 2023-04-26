@@ -1,2 +1,2 @@
-# Logo-Creater---SVG
+# Logo-Creater-SVG
 SVG LOGO MAKER
