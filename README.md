@@ -81,9 +81,9 @@ npm test
  https://github.com/shruthisalimath/Logo-Creater-SVG
 
  ## ScreenShot
-![Logo Generator Screen shot](./IMAGES/IMAGES/Screen-Shot-LogoGenerator.png)
+![Logo Generator Screen shot](./IMAGES/Screen-Shot-LogoGenerator.png)
 
-## Smaple Logo generator
+## Sample Logo generator
 * [Sample Circle Logo](./IMAGES/Sample-circle-logo.png)
 * [Sample Square Logo](./IMAGES/Sample-square-logo.png)
 * [Sample Triangle Logo](./IMAGES/Sample-triangle-logo.png)
