@@ -1,5 +1,4 @@
-# Logo-Creater-SVG
-![GitHub License](https://shields.io/badge/license-MIT-brightgreen)
+# Logo-Creater-SVG  ![GitHub License](https://shields.io/badge/license-MIT-brightgreen)
 Object-oriented Programming Challenge: SVG Logo Maker
 
 ## Description 
@@ -75,13 +74,15 @@ npm test
 ## URL
  1. A walkthrough video demonstration. 
  [LOGO MAKER VIDEO]
- ()
+ (https://drive.google.com/file/d/14Y2jS5QGDuuLgbfXXgw1D_knGviYoy3F/view?usp=share_link)
 
  2.The URL of the GitHub repository.
  https://github.com/shruthisalimath/Logo-Creater-SVG
 
  ## ScreenShot
-![Logo Generator Screen shot](./IMAGES/Screen-Shot-LogoGenerator.png)
+![Logo Generator Screenshot](./IMAGES/Screen-Shot-LogoGenerator.png)
+![Prompts Logo ScreenShot](./IMAGES/Prompts-logo-SS.png)
+![Test logo Screenshot](./IMAGES/Test-logo-SS.png)
 
 ## Sample Logo generator
 * [Sample Circle Logo](./IMAGES/Sample-circle-logo.png)
