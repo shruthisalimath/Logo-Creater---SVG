@@ -7,7 +7,7 @@ const questions = [
         type: 'input',
         name :'text',
         message : 'Enter text for logo (please enter 3 characters)',
-
+        
     },
 
     {
@@ -38,19 +38,19 @@ inquirer.prompt(questions)
     const shapeType = response.shapeType;
     const shapeColor = response.shapeColor;
 
-    generateShapes(text,textColor,shapeType,shapeColor);
+         generateShapes(text,textColor,shapeType,shapeColor);
 })
 .catch((err) => console.log(err));
 
 function generateShapes(text, textColor, shapeType, shapeColor) {
     if (shapeType === 'Triangle') {
         const triangle = new Triangle(text, textColor, shapeColor)
-        return fs.writeFile('logo.svg',triangle,(err) => {
+        return fs.writeFile('logo.svg',triangle.render(),(err) => {
             if(err) {
                 console.log(err);
             }
             else {
-                console.log("SUCCESS!");
+                console.log("Generated logo.svg!");
             }
         });   
        
@@ -58,18 +58,26 @@ function generateShapes(text, textColor, shapeType, shapeColor) {
 
     if (shapeType === 'Circle') {
         const circle = new Circle(text, textColor, shapeColor)
-        return `<svg width="300" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="150" cy="100" r="100" fill="${this.shapeColor}" />
-            <text x="150" y="125" font-size="70" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
-        </svg> `
+        return fs.writeFile('logo.svg',circle.render(),(err) => {
+            if(err) {
+                console.log(err);
+            }
+            else {
+                console.log("Generated logo.svg!");
+            }
+        });   
     }
 
     if (shapeType === 'Square') {
         const square = new Square(text, textColor, shapeColor)
-        return `<svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <rect width="200" height="200" fill="${this.shapeColor}"/>
-            <text x="100" y="125" font-size="70" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
-        </svg>`
+        return fs.writeFile('logo.svg',square.render(),(err) => {
+            if(err) {
+                console.log(err);
+            }
+            else {
+                console.log("Generated logo.svg!");
+            }
+        });   
     }
 
 }
